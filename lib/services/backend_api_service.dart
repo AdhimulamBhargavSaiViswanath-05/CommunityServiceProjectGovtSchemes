@@ -6,7 +6,7 @@ import '../models/scheme.dart';
 /// Backend API Service - Connects to Python Flask backend
 /// This solves CORS issues by using Python as a proxy server
 class BackendApiService {
-  static const String backendUrl = 'http://localhost:5000';
+  static const String backendUrl = 'https://communityserviceprojectgovtschemes.onrender.com';
 
   /// Check if backend server is running
   Future<bool> isBackendHealthy() async {
