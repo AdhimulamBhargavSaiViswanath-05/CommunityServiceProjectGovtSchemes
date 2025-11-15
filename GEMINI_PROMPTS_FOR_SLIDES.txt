@@ -1,0 +1,83 @@
+GEMINI AI PROMPTS FOR GOOGLE SLIDES - ONE SLIDE AT A TIME
+================================================================
+
+Copy each prompt below and paste into Gemini in Google Slides to create slides automatically.
+
+================================================================
+
+PROMPT FOR SLIDE 1:
+-------------------
+Create a slide about the title page for my Community Service Project. The title is "Government Schemes Awareness and Accessibility Platform" with subtitle "Community Service Project". Add placeholders for my name, roll number, college name, and year 2025. Use a professional blue and orange government theme with space for Jan Yojana logo in the background.
+
+
+PROMPT FOR SLIDE 2:
+-------------------
+Create a slide about the problem statement titled "The Challenge". Include community issues as bullet points: 70% citizens unaware of applicable schemes, complex government portals and confusing eligibility, language barriers and scattered information, dependency on middlemen, application rejections due to incomplete knowledge. Add a section titled "Our Solution" stating: Mobile app with AI-powered scheme discovery and personalized recommendations. Use icons for each problem point.
+
+
+PROMPT FOR SLIDE 3:
+-------------------
+Create a slide about community survey in Nambur Village, Guntur District, AP. Include survey details: location is Nambur, participants were farmers, students, homemakers, senior citizens, method was house-to-house visits and interviews. Add key findings: 85% own smartphones, 90% willing to use scheme app, major barriers are lack of awareness, complex processes, and language issues. Use a survey/research theme with icons.
+
+
+PROMPT FOR SLIDE 4:
+-------------------
+Create a slide about the solution titled "Government Schemes Mobile App". List core features with checkmarks: Live scheme data from MyScheme.gov.in API, AI-powered personalized recommendations, Eligibility checker with questionnaire, Scheme comparison tool, Multilingual support in English and Telugu, AI chatbot for instant answers, Document manager and application tracker. Use a mobile phone icon or app interface visual.
+
+
+ 
+
+PROMPT FOR SLIDE 6:
+-------------------
+Create a slide titled "Application Interface" with space for 4 app screenshots. Add placeholders labeled: 1. Home screen with scheme list, 2. Scheme detail view, 3. AI recommendations, 4. Eligibility checker. Include caption at bottom: "Simple & user-friendly for all age groups". Use a clean layout with 2x2 grid for images.
+
+
+PROMPT FOR SLIDE 7:
+-------------------
+Create a slide about community impact titled "Real Impact & Results". Include awareness section: 80% learned about 5+ new schemes. Financial benefits section with: Farmers received ₹5,000-15,000 agricultural subsidies, Students got education scholarships, Senior citizens enrolled in pension schemes, Women accessed entrepreneurship loans. Behavioral change section: Independent applications without middlemen, organized documentation, confident digital usage. Use impact/growth icons.
+
+
+PROMPT FOR SLIDE 8:
+-------------------
+Create a slide about project outcomes titled "Achievements". Split into two sections: Community Benefits with checkmarks for 80% increase in scheme awareness, simplified discovery and application, reduced rejections, time savings and transparency, financial inclusion. Technical Skills Gained section with checkmarks for Flutter and Dart development, Flask backend and API integration, cloud deployment, UI/UX design for rural users. Use achievement badges or trophy icons.
+
+
+PROMPT FOR SLIDE 9:
+-------------------
+Create a slide about future enhancements titled "Recommendations". List next steps as bullet points: Add more regional languages like Hindi, Tamil, Kannada; Offline access for saved schemes; Push notifications for new schemes; DigiLocker integration; Scale to other districts; Partner with government departments. Use forward-looking icons like arrows, roadmap, or innovation symbols.
+
+
+PROMPT FOR SLIDE 10:
+--------------------
+Create a slide for thank you page titled "Thank You!". Add key takeaway: "Awareness + Accessibility = Empowerment". Include project links section with GitHub: github.com/AdhimulamBhargavSaiViswanath-05/CommunityServiceProjectGovtSchemes and Backend: communityserviceprojectgovtschemes.onrender.com. Add "Questions?" text and space for Jan Yojana logo at bottom. Use a clean, professional closing slide design.
+
+
+================================================================
+GENERAL TIPS FOR ALL SLIDES:
+================================================================
+
+After each prompt, you can add these instructions:
+- "Use a professional blue and white color scheme"
+- "Make text size minimum 20pt for readability"
+- "Add Jan Yojana logo in top-right corner"
+- "Keep design clean and not cluttered"
+- "Use relevant icons to make it visually appealing"
+
+================================================================
+USAGE INSTRUCTIONS:
+================================================================
+
+1. Open Google Slides
+2. Enable Gemini integration (if available)
+3. Copy PROMPT FOR SLIDE 1
+4. Paste into Gemini chat in Google Slides
+5. Review the generated slide
+6. Make manual adjustments if needed
+7. Move to next prompt and repeat
+
+Alternative if Gemini doesn't work:
+1. Create blank slides in Google Slides
+2. Use the prompts as reference for what content to add
+3. Manually format using the content from PPT_CONTENT_FOR_GOOGLE_SLIDES.txt
+
+================================================================

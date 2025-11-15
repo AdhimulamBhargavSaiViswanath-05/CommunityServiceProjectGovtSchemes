@@ -1,0 +1,166 @@
+GOOGLE SLIDES PRESENTATION - GOVERNMENT SCHEMES AWARENESS PLATFORM
+=====================================================================
+TOTAL SLIDES: 10 (Concise Version)
+=====================================================================
+
+SLIDE 1: TITLE SLIDE
+--------------------
+Title: Government Schemes Awareness and Accessibility Platform
+Subtitle: Community Service Project
+Your Name: [Your Name]
+Roll Number: [Your Roll Number]
+College: [Your College Name]
+Year: 2025
+
+Background: Jan Yojana logo + blue/orange theme
+
+
+SLIDE 2: PROBLEM STATEMENT
+---------------------------
+Title: The Challenge
+
+Community Issues:
+• 70% citizens unaware of applicable schemes
+• Complex government portals & confusing eligibility
+• Language barriers & scattered information
+• Dependency on middlemen
+• Application rejections due to incomplete knowledge
+
+Our Solution:
+Mobile app with AI-powered scheme discovery & personalized recommendations
+
+
+SLIDE 3: SURVEY & FINDINGS
+---------------------------
+Title: Community Survey - Nambur Village
+
+Survey Details:
+• Location: Nambur, Guntur District, AP
+• Participants: Farmers, students, homemakers, senior citizens
+• Method: House-to-house visits & interviews
+
+Key Findings:
+• 85% own smartphones
+• 90% willing to use scheme app
+• Major barriers: Lack of awareness, complex processes, language issues
+
+
+SLIDE 4: THE SOLUTION
+----------------------
+Title: Government Schemes Mobile App
+
+Core Features:
+✓ Live scheme data (MyScheme.gov.in API)
+✓ AI-powered personalized recommendations
+✓ Eligibility checker with questionnaire
+✓ Scheme comparison tool
+✓ Multilingual support (English, Telugu)
+✓ AI chatbot for instant answers
+✓ Document manager & application tracker
+
+
+SLIDE 5: TECHNICAL ARCHITECTURE
+--------------------------------
+Title: Technologies Used
+
+Frontend: Flutter (Dart) - Cross-platform mobile app
+Backend: Flask (Python) - RESTful API
+APIs: MyScheme.gov.in, OpenWeather
+Deployment: Render.com (24/7 backend)
+Version Control: GitHub
+
+Architecture: Mobile App → Flask API → MyScheme.gov.in
+
+
+SLIDE 6: APP SCREENSHOTS
+-------------------------
+Title: Application Interface
+
+[Insert 4 app screenshots:]
+1. Home screen with scheme list
+2. Scheme detail view
+3. AI recommendations
+4. Eligibility checker
+
+Caption: Simple & user-friendly for all age groups
+
+
+SLIDE 7: COMMUNITY IMPACT
+--------------------------
+Title: Real Impact & Results
+
+Awareness:
+• 80% learned about 5+ new schemes
+
+Financial Benefits:
+• Farmers: ₹5,000-15,000 agricultural subsidies
+• Students: Education scholarships
+• Senior citizens: Pension enrollments
+• Women: Entrepreneurship loans
+
+Behavioral Change:
+• Independent applications (no middlemen)
+• Organized documentation
+• Confident digital usage
+
+
+SLIDE 8: PROJECT OUTCOMES
+--------------------------
+Title: Achievements
+
+Community Benefits:
+✓ 80% increase in scheme awareness
+✓ Simplified discovery & application
+✓ Reduced rejections
+✓ Time savings & transparency
+✓ Financial inclusion
+
+Technical Skills Gained:
+✓ Flutter & Dart development
+✓ Flask backend & API integration
+✓ Cloud deployment
+✓ UI/UX design for rural users
+
+
+SLIDE 9: FUTURE ENHANCEMENTS
+-----------------------------
+Title: Recommendations
+
+Next Steps:
+• Add more regional languages (Hindi, Tamil, Kannada)
+• Offline access for saved schemes
+• Push notifications for new schemes
+• DigiLocker integration
+• Scale to other districts
+• Partner with government departments
+
+
+SLIDE 10: THANK YOU
+-------------------
+Title: Thank You!
+
+Key Takeaway:
+Awareness + Accessibility = Empowerment
+
+Project Links:
+GitHub: github.com/AdhimulamBhargavSaiViswanath-05/CommunityServiceProjectGovtSchemes
+Backend: communityserviceprojectgovtschemes.onrender.com
+
+Questions?
+
+[Jan Yojana logo]
+
+
+=======================================================================
+DESIGN TIPS:
+=======================================================================
+
+✓ Use professional blue/white template
+✓ Keep text concise (3-5 bullets max per slide)
+✓ Add icons/images for visual appeal
+✓ Jan Yojana logo on top-right corner (all slides)
+✓ Font size: Minimum 20pt for readability
+✓ Total presentation time: 8-10 minutes
+✓ Practice demo on Slide 6 (app screenshots)
+
+=======================================================================
