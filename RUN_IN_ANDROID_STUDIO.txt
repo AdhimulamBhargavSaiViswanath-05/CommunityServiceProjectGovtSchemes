@@ -1,0 +1,275 @@
+HOW TO RUN PROJECT IN ANDROID STUDIO AND DEPLOY TO PHONE
+===========================================================
+
+STEP 1: INSTALL ANDROID STUDIO
+-------------------------------
+1. Download Android Studio from: https://developer.android.com/studio
+2. Install with default settings
+3. During installation, make sure these are selected:
+   ✓ Android SDK
+   ✓ Android SDK Platform
+   ✓ Android Virtual Device
+   ✓ Performance (Intel HAXM)
+
+4. Complete the setup wizard
+5. Install latest Android SDK when prompted
+
+
+STEP 2: INSTALL FLUTTER PLUGIN IN ANDROID STUDIO
+-------------------------------------------------
+1. Open Android Studio
+2. Go to: File → Settings (Windows) or Android Studio → Preferences (Mac)
+3. Navigate to: Plugins
+4. Click on "Marketplace" tab
+5. Search for: Flutter
+6. Click "Install" on Flutter plugin
+7. It will also install Dart plugin automatically
+8. Click "Restart IDE" when prompted
+
+
+STEP 3: CLONE YOUR PROJECT IN ANDROID STUDIO
+---------------------------------------------
+Method A - Using Android Studio (Easier):
+1. Open Android Studio
+2. Click: Get from VCS (or File → New → Project from Version Control)
+3. Paste your repository URL:
+   https://github.com/AdhimulamBhargavSaiViswanath-05/CommunityServiceProjectGovtSchemes.git
+4. Choose location on your computer
+5. Click "Clone"
+6. Wait for project to open
+
+Method B - Using Git Command:
+1. Open terminal/command prompt
+2. Navigate to desired folder
+3. Run: git clone https://github.com/AdhimulamBhargavSaiViswanath-05/CommunityServiceProjectGovtSchemes.git
+4. Open Android Studio
+5. Click: Open an Existing Project
+6. Select the cloned folder
+7. Click OK
+
+
+STEP 4: INSTALL PROJECT DEPENDENCIES
+-------------------------------------
+1. Android Studio will automatically detect it's a Flutter project
+2. A banner will appear at top saying "Packages get" or "Get dependencies"
+3. Click on "Get dependencies" or "Pub get"
+   
+   If it doesn't appear, manually run:
+   - Open Terminal in Android Studio (bottom panel)
+   - Run: flutter pub get
+
+4. Wait for all dependencies to download (1-2 minutes)
+5. Look for "Process finished" message in terminal
+
+
+STEP 5: CONFIGURE ANDROID SDK
+------------------------------
+1. Go to: File → Settings → Appearance & Behavior → System Settings → Android SDK
+2. Make sure these are installed under "SDK Platforms":
+   ✓ Android 14.0 (API Level 34) - or latest
+   ✓ Android 13.0 (API Level 33)
+   
+3. Switch to "SDK Tools" tab
+4. Make sure these are checked:
+   ✓ Android SDK Build-Tools
+   ✓ Android SDK Command-line Tools
+   ✓ Android SDK Platform-Tools
+   ✓ Android Emulator
+   ✓ Google Play Services
+   
+5. Click "Apply" and let it install
+6. Click "OK" when done
+
+
+STEP 6: ACCEPT ANDROID LICENSES
+--------------------------------
+1. Open Terminal in Android Studio (bottom panel)
+2. Run: flutter doctor --android-licenses
+3. Press 'y' (yes) for all license agreements
+4. Wait until it says "All SDK package licenses accepted"
+
+
+STEP 7: CONNECT YOUR PHONE
+---------------------------
+1. On Your Phone:
+   - Go to Settings → About Phone
+   - Tap "Build Number" 7 times (Developer Mode will activate)
+   - Go back to Settings → Developer Options
+   - Enable "USB Debugging"
+   - Enable "Install via USB" (if available)
+
+2. Connect Phone to Laptop:
+   - Use USB cable (original cable works best)
+   - On phone, tap "Allow" when prompted for USB debugging
+   - Check "Always allow from this computer"
+   - Tap OK
+
+3. Verify Connection in Android Studio:
+   - Look at top toolbar in Android Studio
+   - Click on device dropdown (next to Run button)
+   - You should see your phone model/name listed
+   - Example: "Xiaomi 22041219PI (Android 14)"
+
+
+STEP 8: RUN THE APP ON YOUR PHONE
+----------------------------------
+Method 1 - Using Run Button (Easiest):
+1. Make sure your phone is selected in device dropdown
+2. Click the green "Run" ▶️ button (top toolbar)
+3. OR press Shift + F10 (Windows) / Control + R (Mac)
+4. Wait for build to complete (5-10 minutes first time)
+5. App will automatically install and launch on your phone
+
+Method 2 - Using Terminal:
+1. Open Terminal in Android Studio
+2. Run: flutter devices
+   (Verify your phone is listed)
+3. Run: flutter run
+4. Select your device number if multiple devices shown
+5. Wait for build and installation
+
+Method 3 - Build APK File:
+1. Open Terminal in Android Studio
+2. Run: flutter build apk --release
+3. Wait for build to complete (5-10 minutes)
+4. APK location will be shown:
+   build/app/outputs/flutter-apk/app-release.apk
+5. Copy this APK to your phone
+6. Install manually by opening the file on phone
+
+
+STEP 9: DEBUGGING AND LOGS
+---------------------------
+While app is running:
+1. Open "Run" panel at bottom of Android Studio
+2. You'll see live logs and print statements
+3. Any errors will appear here in red
+4. Hot reload: Press 'r' in terminal or click ⚡ icon
+5. Hot restart: Press 'R' in terminal
+
+
+TROUBLESHOOTING COMMON ISSUES
+==============================
+
+Issue 1: "Flutter SDK not found"
+Solution:
+- Go to: File → Settings → Languages & Frameworks → Flutter
+- Set Flutter SDK path (e.g., C:\src\flutter or where you installed)
+- Click Apply
+
+Issue 2: "Gradle build failed"
+Solution:
+- In Android Studio terminal:
+  flutter clean
+  flutter pub get
+- Delete these folders: android/.gradle and build/
+- Try running again
+
+Issue 3: Phone not detected
+Solution:
+- Disconnect and reconnect USB cable
+- Try different USB port
+- Enable "File Transfer" mode on phone (not just charging)
+- Disable and re-enable USB debugging
+- Run in terminal: adb devices (should show your device)
+
+Issue 4: "Insufficient storage" error
+Solution:
+- Free up space on C: drive (need 3-5 GB)
+- Or set Gradle to use different drive:
+  In terminal: $env:GRADLE_USER_HOME = "D:\gradle_cache"
+  Then run: flutter run
+
+Issue 5: Build taking too long
+Solution:
+- First build takes 5-10 minutes (normal)
+- Subsequent builds are faster (1-2 minutes)
+- Make sure antivirus isn't scanning the project folder
+
+Issue 6: "minSdkVersion" error
+Solution:
+- Open: android/app/build.gradle
+- Find: minSdkVersion
+- Change to: minSdkVersion 21 (or higher)
+- Save and try again
+
+Issue 7: Backend not responding in app
+Solution:
+- Backend might be sleeping (Render.com free tier)
+- Open in browser: https://communityserviceprojectgovtschemes.onrender.com/health
+- Wait 30-60 seconds for backend to wake up
+- Restart the app
+
+
+ANDROID STUDIO SHORTCUTS
+=========================
+Run app: Shift + F10
+Stop app: Ctrl + F2
+Hot reload: Ctrl + S (save file)
+Hot restart: Ctrl + Shift + \
+Open terminal: Alt + F12
+Find file: Ctrl + Shift + N
+Search everywhere: Double press Shift
+
+
+ADVANTAGES OF USING ANDROID STUDIO
+===================================
+✓ Better code completion and IntelliSense
+✓ Built-in device manager for emulators
+✓ Visual layout inspector
+✓ Integrated debugging tools
+✓ Logcat for viewing phone logs
+✓ APK Analyzer to check app size
+✓ Performance profiler
+✓ Easy device management
+✓ One-click run and deploy
+
+
+ALTERNATIVE - BUILD APK WITHOUT ANDROID STUDIO
+===============================================
+If you just want APK file without opening Android Studio:
+
+1. Install Flutter SDK only
+2. Clone the repository
+3. Open terminal in project folder
+4. Run: flutter build apk --release
+5. Find APK at: build/app/outputs/flutter-apk/app-release.apk
+6. Transfer to phone and install
+
+
+FINAL CHECKLIST
+===============
+Before running on phone:
+☑ Android Studio installed with Flutter plugin
+☑ Flutter SDK configured
+☑ Android licenses accepted (flutter doctor --android-licenses)
+☑ Project cloned and dependencies installed (flutter pub get)
+☑ Phone connected with USB debugging enabled
+☑ Phone appears in device dropdown in Android Studio
+☑ Backend is awake: https://communityserviceprojectgovtschemes.onrender.com/health
+
+If all above are checked, click Run ▶️ button!
+
+
+EXPECTED RESULT
+===============
+After clicking Run:
+1. Gradle will sync and build (2-10 minutes)
+2. App will be packaged as APK
+3. APK will transfer to your phone
+4. App will automatically install
+5. App will launch on your phone
+6. You'll see the splash screen with Jan Yojana logo
+7. Then home screen with government schemes
+
+SUCCESS! 🎉
+
+
+FOR TEAMMATES/FRIENDS
+=====================
+Share this file and your GitHub repository:
+https://github.com/AdhimulamBhargavSaiViswanath-05/CommunityServiceProjectGovtSchemes
+
+They can follow the same steps to run on their Android Studio.
+
+===========================================================
