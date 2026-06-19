@@ -215,9 +215,6 @@ def api_home():
     })
 
 
-@app.route('/health', methods=['GET'])
-def health_check():
-
 
 
 @app.route('/health', methods=['GET'])
