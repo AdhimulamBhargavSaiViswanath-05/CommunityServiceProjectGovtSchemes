@@ -4,7 +4,7 @@ const String baseUrl = "https://api.myscheme.gov.in/schemes/v5/public/schemes";
 const String apiKey = "tYTy5eEhlu9rFjyxuCr7ra7ACp4dv1RH8gWuHTDc";
 
 const String weatherApiKey = "57e4c3580b0b4c31dfe89f2bb19e194a";
-const String geminiApiKey = "AQ.Ab8RN6LxRMVz2PL6aBMND20sFkeAOh8xZjvIr74DQVGcLh-yVg";
+const String geminiApiKey = "AQ.Ab8RN6KT5VG-nPw1uEGiaE8XD6bheZeNopsI8XHffXtaTG-wEA";
 
 const String weatherBaseUrl =
     "https://api.openweathermap.org/data/2.5/weather?";
